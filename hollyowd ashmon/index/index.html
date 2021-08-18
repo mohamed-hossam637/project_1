@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hollywood Ashmoun</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- start loading bar -->
+        <div class="loadingBar container-fluid">
+            <span class="loading">
+                <i class="fa fa-spinner"></i>
+                <p>جاري التحميل ...</p>
+            </span>
+        </div>
+        <!-- end loading bar -->
+        <!-- start main section and header -->
+        <section class="main-section container-fluid" id="main">
+            <!-- start overlay -->
+            <span class="overlay"></span>
+            <!-- start header -->
+            <div class="container-fluid">
+                <header class="header container">
+                    <a href="#" class="logo">
+                        <i class="fa fa-camera"></i>
+                    </a>
+                    <ul class="links" >
+                        <li><a href="#main">الرئيسيه</a></li>
+                        <li><a href="#servic">الخدمات</a></li>
+                        <li><a href="#abute">نبذه عنا</a></li>
+                        <li><a href="#gallary-sec">معرض الصور</a></li>
+                        <li class="book-now" id="pcLinks"><a href="#"> احجز الان</a></li>
+                    </ul>
+                    <!-- start mobile menu -->
+                    <div class="mobile-menu-icon" >
+                        <!-- <i class="fa fa-bars"></i> -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="mobile-menu">
+                        <ul class="links">
+                            <li><a href="#">الرئيسيه</a></li>
+                            <li><a href="#servic">الخدمات</a></li>
+                            <li><a href="#abute">نبذه عنا</a></li>
+                            <li><a href="#gallary-sec">معرض الصور</a></li>
+                            <li  class="book-now"><a href="#"> احجز الان</a></li>
+                        </ul>
+                    </span>
+                    <!-- end mobile menu -->
+                </header>
+                <!-- end header -->
+            </div>
+        
+        </section>
+        <!-- end main section -->
+        <!-- start book now section -->
+        <section class="book-now-section">
+            <div class="book-box">
+                <i class="close-btn fa fa-close"></i>
+                <div class="notes">
+
+                </div>
+                <form class="book">
+                    <input type="text" placeholder="الاسم" name="name">
+                    <input type="text" placeholder="رقم الهاتف" name="phone-number">
+                    <input type="text" placeholder=" اسم البلد" name="location">
+                    <div class="filter">
+                        <input name="book-type" id="input-filter" list="learning-path" placeholder="اخنر نوع الحجز">
+                        <datalist id="learning-path">
+                                <option value="حفل زفاف"></option>
+                                <option value="حفل خطوبه"></option>
+                                <option value=" عيد ميلاد"></option>
+                                <option value="حفل تخرج"></option>
+                                <option value=" سيشن تصوير"></option>
+                        </datalist>
+                    </div>
+                    <input type="number" id="personal-number" name="personal-number" max="5" min="1" placeholder="ادخل عدد المرافقين">
+                    <span class="number_err">الحد الاقصي لعدد المرافقين(5) اشخاص</span>
+                    <div class="date">
+                        <h3>اختر التاريخ </h3>
+                        <input type="date" name="date">
+                    </div>
+                    <div class="time">  
+                        <h3>اختر التوقيت</h3>
+                        <input type="time" name="time">
+                    </div>
+                    <div class="Photographer-need">
+                        <h3>هل تحتاج الي مصور(Photographer)؟</h3>
+                        <ul class="Photographer-status">
+                           <li>
+                            <input type="radio" id="yes" name="photo-status" value="yes">
+                            <label for="yes"> نعم </label>
+                           </li>
+                            <li>
+                                <input type="radio" id="no" name="photo-status" value="no" >
+                                <label for="no">لا </label>
+                            </li>
+                        </ul>
+                        <div class="extirnal-photographer">
+                            <h3>برجاء ادخال اسم المصور</h3>
+                            <input type="text" placeholder="اسم المصور" name="ex-photographer">
+                        </div>
+                    </div>
+                    <input type="submit" value="احجز" class="submit">
+                </form>
+            </div>
+        </section>
+        <!-- end book now section -->
+        <!-- start servic section -->
+        <section class="services section container-fluid" id="servic">
+            <h2 class="title">الخدمات</h2>
+            <div class="container">
+                <p>
+                    يقدم هوليود اشمون مجموعه من الخدمات الرائعه و المميزه مثل
+                </p>
+                <div class="cards">
+                    <div class="servic-card">
+                        <div>
+                            <i class="fa fa-coffee"></i>
+                        </div>
+                        <p>
+                            كافيه لاجمل المشروبات 
+                        </p>
+                    </div>
+    
+                    <div class="servic-card">
+                        <div>
+                            <i class="fa fa-birthday-cake"></i>
+                        </div>
+                        <p>
+                            اقامه حفلات اعياد الميلاد 
+                        </p>
+                    </div>
+    
+                    <div class="servic-card">
+                        <div>
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <p>
+                            حفلات التخرج (fun day)
+                        </p>
+                    </div>
+    
+                    <div class="servic-card">
+                        <div>
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <p>
+                            سيشن تصوير لحفلات الزفاف و الخطوبه و كاجوال
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end servic section -->
+        <!-- start abute us section -->
+        <section class="abute-us container-fluid section" id="abute">
+            <h2 class="title">نبذه عنا</h2>
+            <div class="container">
+                <h2>
+                    ما هو هوليوود اشمون ؟
+                </h2>
+                <p>
+                     سيشن وكافيه هوليود تم انشاء المكان فى 1/1/2020  يتمتع بمساحه واسعه ومسطح اخضر كبير ويتميز بالديكورات العصريه لتصوير احلى سيشنات زواج او خطوبه وكاجول 
+                    والمكان مجهز لاقامه حفلات الزواج والخطوبه وحفلات التخرج واعياد الميلاد والمؤتمرات
+                    ومتواجد الكافيه باحلى المشروبات والجو الهادى 
+                </p>
+                <div class="location">
+                    <h4>العنوان</h4>
+                    <p> طريق محله سبك / اشمون/المنوفيه</p>
+                    <button class="show-map">
+                        <a href="https://www.google.com/maps?q=30.300052241312756, 31.009043095895446" target="_blank">Location <i class="fa fa-map-marker"></i></a>
+                    </button>
+                </div>
+                <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.796547182197!2d31.006929515121154!3d30.299853081790147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE3JzU5LjUiTiAzMcKwMDAnMzIuOCJF!5e0!3m2!1sen!2seg!4v1622755578491!5m2!1sen!2seg"  height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <!-- end abute us section -->
+        <!-- start gallary -->
+        <section class="gallary container-fluid section" id="gallary-sec">
+            <h2 class="title">معرض الصور</h2>
+            <div class="container">
+                <div class="one slide">
+                    <h3>لقطات من الداخل </h3>
+                    <div class="image-slide-one container">
+                       <div class="image-container">
+                            <img>
+                            <span class="next" aria-disabled="true"><i class="fa fa-arrow-right"></i></span>
+                            <span class="prev"><i class="fa fa-arrow-left"></i></span>
+                            <span class="slide-number"></span>
+                       </div>
+                    </div>
+                </div>
+                <!-- start  tow
+                <div class="tow slide">
+                    <h3>سيشنات</h3>
+                    <div class="image-slide-one container">
+                       <div class="image-container">
+                            <img src="../images/seition/189391476_1699019236955177_4992263414719564845_n.jpg">
+                            <span class="next" aria-disabled="true"><i class="fa fa-arrow-right"></i></span>
+                            <span class="prev"><i class="fa fa-arrow-left"></i></span>
+                            <span class="slide-number"></span>
+                       </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- end gallary -->
+        <!-- start footer -->
+        <footer class="footer container-fluid">
+            <div class="container">
+                <div class="social-media">
+                    <h4>
+                        تواصل معنا عبر 
+                    </h4>
+                    <ul>
+                        <li><a href="https://web.facebook.com/Hollywood-ashmoun-100681074784751" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="mailto:Ibrahimw714@gmail.com"><i class="fa fa-google"></i></a></li>
+                        <li><a href="https://wa.me/+201125751408"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="copy-right">
+                    <p>
+                        Hollywood Ashmoun allRight reserved &copy; 2021
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- call now open in android -->
+        <!-- start -->
+            <a class="call-now" href="tel:01125751408">
+                <i class="fa fa-phone"></i>
+            </a>
+        <!-- end -->
+        <!-- start script -->
+        <script src="../js/main.js"></script>
+        <!-- end script -->
+    </body>
+</html>
